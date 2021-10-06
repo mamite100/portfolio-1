@@ -1,0 +1,30 @@
+body {
+margin: 0;
+}
+.portfolio-section:nth-child(2n) {
+background-color:#f4f4f4;
+}
+.container {
+width: 327px;
+margin: 0 auto;
+}
+.portfolio-heading-container {
+display: flex;
+justify-content: center;
+background-color: blue;
+}
+
+.portfolio-heading {
+background-color: #fa382f;
+color:#fff;
+text-align: center;
+text-transform: uppercase;
+padding: 3px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 768px;
+        margin: 0 auto;
+    }
+}
