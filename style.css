@@ -5,15 +5,18 @@ margin: 0;
 background-color:#f4f4f4;
 }
 .container {
-width: 327px;
+width: 320px;
 margin: 0 auto;
 }
 .portfolio-heading-container {
 display: flex;
 justify-content: center;
-background-color: blue;
 }
-
+.project-card-name {
+background-color: #fa382f;
+text-transform: uppercase;
+font-size: medium;
+}
 .portfolio-heading {
 background-color: #fa382f;
 color:#fff;
