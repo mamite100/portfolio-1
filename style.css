@@ -12,7 +12,7 @@
   --background-color-secondary: #f4f4f4;
   --text-color: #000;
   --theme-color: red;
-  --hover-background: #3a8e99;
+  --hover-background: red;
   --footer-background: red;
   --footer-text-color: #000;
 }
@@ -26,22 +26,18 @@ body {
 .header {
   background-color: black;
   position: relative;
-  height: 520px;
-  width: 100vh;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  margin-left: 0 auto;
+  margin: 0 auto;
 }
-
-
 .header-icons {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  
+  margin-top: 10px;
+  margin-right: 10px;
 }
 
 .header-icons a {
@@ -78,6 +74,20 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  margin-left: 10px;
+}
+
+.profile-image {
+  image-orientation:inherit; 
+  background-image: url("./assets/profileImage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 180px;
+  height: 180px;
+  border: 2px solid var(--border-color);
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 10px;
 }
 
 .header-portfolio {
@@ -111,18 +121,9 @@ body {
 .header-profile {
   display: flex;
   justify-content: flex-end;
+  width: 100vh;
 }
 
-.profile-image {
-  background-image: url(/assets/profile-image.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 180px;
-  height: 180px;
-  border: 2px solid var(--border-color);
-  border-radius: 50%;
-  overflow: hidden;
-}
 
 .intro-section {
   width: 100%;
