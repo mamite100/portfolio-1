@@ -1,13 +1,7 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 :root {
-  --header-title:white;
+  --header-title: white;
   --title-text-color: #fff;
-  --border-color:red;
+  --border-color: red;
   --background-color-primary: #fff;
   --background-color-secondary: #f4f4f4;
   --text-color: #000;
@@ -18,19 +12,20 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   background: var(--background-color-primary);
 }
 
 .header {
   background-color: black;
-  position: relative;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  height: 300px;
 }
 .header-icons {
   display: flex;
@@ -76,18 +71,19 @@ body {
   justify-content: center;
   margin-left: 10px;
 }
-
+.profile-image > img {
+  width: 100%;
+  object-fit: cover;
+}
 .profile-image {
-  image-orientation:inherit; 
-  background-image: url("./assets/profileImage.jpg");
-  background-repeat: no-repeat;
+  position: absolute;
+  /*background-repeat: no-repeat;*/
   background-size: cover;
   width: 180px;
   height: 180px;
   border: 2px solid var(--border-color);
   border-radius: 50%;
   overflow: hidden;
-  margin-bottom: 10px;
 }
 
 .header-portfolio {
@@ -103,7 +99,7 @@ body {
 }
 
 .first-occupation {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 34px;
   line-height: 41px;
@@ -111,7 +107,7 @@ body {
 }
 
 .second-occupation {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
@@ -124,7 +120,6 @@ body {
   width: 100vh;
 }
 
-
 .intro-section {
   width: 100%;
   background: var(--background-color-secondary);
@@ -135,7 +130,7 @@ body {
 }
 
 .intro-text {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   width: 327px;
   color: var(--text-color);
   font-size: 17px;
@@ -160,7 +155,7 @@ body {
 }
 
 .title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: var(--title-text-color);
   background: var(--theme-color);
   font-weight: 700;
@@ -179,7 +174,7 @@ body {
 }
 
 .tech-skills {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: var(--text-color);
   font-weight: 400;
   font-size: 17px;
@@ -247,7 +242,7 @@ body {
 }
 
 .project-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 28px;
@@ -335,7 +330,7 @@ body {
 }
 
 .subheading {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: var(--theme-color);
   font-weight: 700;
   font-size: 21px;
@@ -479,7 +474,7 @@ body {
 }
 
 footer {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: var(--footer-text-color);
   background: var(--footer-background);
   width: 100%;
@@ -514,7 +509,17 @@ footer {
   color: var(--footer-text-color);
 }
 
-@media (min-width: 791px) {
+/* MEDIA QUARIES*/
+@media (min-width: 768px) {
+  .social-media {
+    margin-right: 10%;
+    margin-left: 60%;
+  }
+  .profile-image {
+    left: 65%;
+  }
+}
+@media (min-width: 1024px) {
   .header-image {
     height: 681px;
   }
@@ -697,5 +702,12 @@ footer {
   .contact-info p {
     font-size: 30px;
     line-height: 50px;
+  }
+}
+/* DESKTOP */
+
+@media (min-width: 1024px) {
+  header {
+    height: 680px;
   }
 }
