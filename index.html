@@ -2,388 +2,419 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mamites Andersson - portfolio</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet" />
+    <title>Mamites Portfolio</title>
 </head>
 
 <body>
-    <!--Header-->
     <header>
-
-        <section class="header">
-            <div class="header-icons">
-                <a class="icon-circle" title="link to Mamites LinkedIn"
-                    href="https://www.linkedin.com/in/mamite-andersson/" target="_blank" rel="noopener noreferrer"
-                    aria-label="link to linkedIn">
-                    <div class="icon">
-                        <img src="./assets/linkedin.svg" width="32" height="31" alt="linkedIn icon"
-                            aria-hidden="true" />
-                    </div>
-                </a>
-                <a class="icon-circle" title="link to Mamites github" href="https://github.com/mamite100/"
-                    target="_blank" rel="noopener noreferrer" aria-label="link to GitHub">
-                    <div class="icon">
-                        <img src="./assets/github.svg" width="36" height="38" alt="GitHub icon" aria-hidden="true" />
-                    </div>
-                </a>
-                <a class="icon-circle" title="link to Mamites stackoverflow"
-                    href="https://stackoverflow.com/c/technigo/users/270/" target="_blank" rel="noopener noreferrer"
-                    aria-label="link to Stack Overflow">
-                    <div class="icon">
-                        <img src="./assets/stackOverflow.svg" width="39" height="39" alt="Stack Overflow icon"
-                            aria-hidden="true" />
-                    </div>
-                </a>
-            </div>
-            <div class="header-title">
-                <h1 class="header-portfolio">
-                    portfolio:
-                    <span class="portfolio-name">Mamite Andersson</span>
-                </h1>
-                <h1 class="first-occupation" aria-label="frontend developer. +. digital editor.">
-                    frontend
-                </h1>
-                <h1 class="first-occupation" aria-hidden="true">developer</h1>
-                <h1 class="second-occupation" aria-hidden="true">
-                    + digital editor
-                </h1>
-            </div>
-            <div class="header-profile">
-                <span class="profile-image" role="img" aria-label="profile image of Mamite Andersson"
-                    title="profile image of Mamite Andersson">
-                    <img src="assets/profileImage.jpg" alt="profile photo Mamite Anderson">
-                </span>
-            </div>
+        <img class="background-img" src="./assets/colors.jpg" alt="background-img" />
+        <!-- social media icons -->
+        <section class="soMe">
+            <a href="https://www.linkedin.com/in/mamite-andersson/">
+                <img class="linkedin-icon" src="./assets/linkedin.svg" alt="linkedin-icon" />
+            </a>
+            <a href="https://github.com/mamite100">
+                <img class="github-icon" src="./assets/github.svg" alt="github-icon" /></a>
+            <a href="https://stackoverflow.com/c/technigo/users/270/">
+                <img class="stackoverflow-icon" src="./assets/stackOverflow.svg" alt="stackoverflow-icon" />
+            </a>
         </section>
-    </header>
-    <!-- Intro-Section -->
-    <section class="intro-section">
-        <div class="intro-text">
-            <span class="line"></span><span class="dot"></span>
-            Hey, my name is Mamite. I'm an aspiring Front-end developer with experience in digital communication.
-            After many years in communication, I decided to challenge my career path.
-            I believe that technology can be a force that will take us forward to a smarter and more sustainable
-            existence.
-            Technology can provide empowerment, knowledge, awareness, access, and community.
-            I do enjoy being a part of a better future!
+        <!-- Title text  -->
+        <div class="title">
+            <div class="name-section">
+                <p class="portfolio-text">portfolio:</p>
+                <p>MAMITE ANDERSSON</p>
+            </div>
+            <h1>frontend developer</h1>
+            <h2>+ digital editor</h2>
         </div>
-    </section>
-    <!-- Tech -->
-    <h2 class="title">Tech</h2>
-    <div class="tech-skills">
-        HTML, CSS, Flexbox, Grid, <span class="highlight-color">JavaScript</span>,
-        ES6, <span class="highlight-color">React</span>,
-        <span class="highlight-color">React Hooks</span>,
-        <span class="highlight-color">Redux</span>Web Accessibility,
-        APIs, mob-programming, pair-programming, GitHub
-    </div>
-    <!-- Projects -->
-    <section class="projects-section">
-        <h2 class="title">Featured Projects</h2>
-        <div class="featured-projects">
-            <article class="project-card">
+        <img class="profile-img" src="./assets/profileImage.jpg" alt="profile-img" />
+    </header>
 
-                <!--Proj1-->
-                <article class="project-card">
-                    <a href="https://reduxquiz-tech.netlify.app/" rel="noopener" target="_blank">
-                </article>
-                <div class="project-headline">
-                    <img class="project-headline-img" src="assets/tech-quiz-project.png"
-                        alt="headline picture tech quiz" aria-hidden="true" />
-                    <div class="transbox">
+    <section class="main-section">
+        <div class="intro-section">
+            <div class="intro-text">
+                <p>
+                    <span class="line"></span>
+                    <span class="dot"></span>
+                    Hey, my name is Mamite. I'm an aspiring Front-end developer with experience in digital
+                    communication. After many years
+                    in communication, I decided to challenge my career path. I believe that technology can be a force
+                    that will take us
+                    forward to a smarter and more sustainable existence. Technology can provide empowerment, knowledge,
+                    awareness, access,
+                    and community. I do enjoy being a part of a better future!
+                </p>
+            </div>
+        </div>
+        <div class="tech-section">
+            <h3>tech</h3>
+            <div class="tech-text">
+                <p>
+                    HTML, CSS, Flexbox, <span class="red">JavaScript ES6</span>, JSX,
+                    <span class="red">React</span>, React Hooks, Redux, Node.js, Web
+                    Accessibly, API:s, mob-programming, pair-programming, Github
+                </p>
+            </div>
+        </div>
+
+        <!-- PROJECT SECTION  -->
+        <section class="projects-section">
+            <h3>featured projects</h3>
+            <!--Project-TechQuiz-->
+            <section class="wrap-container">
+                <article class="project-container-1">
+                    <div class="card-container-1">
+                        <a href="https://reduxquiz-tech.netlify.app/">
+                            <div class="overlay"></div>
+                            <img class="project-img" src="./assets/tech-quiz-project.png"
+                                alt="project headline image" />
+                        </a>
+                        <h2 class="card-text">Tech Quiz</h2>
                     </div>
-                    <h3 class="project-title" aria-hidden="true">Tech Quiz</h3>
-                </div>
-                <div class="project-brief">
-                    <p class="description-title">Quiz build in rect redux</p>
-                    <p class="description-project">
+
+                    <h6>Quiz build in rect redux</h6>
+                    <p class="project-text">
                         Built in React Redux, using Redux-toolkit and Styled Components.
                     </p>
-                </div>
-                <div class="tags" aria-hidden="true">
-                    <p>React</p>
-                    <p>Redux</p>
-                    <p>React Hooks</p>
-                    <p>Styled Components</p>
-                </div>
-                </a>
-                <!--Projct2-->
-                <article class="project-card">
-                    <a href="https://amazing-maze-adventure.netlify.app/">
+                    <div class="lang-container">
+                        <div class="lang-container-text">
+                            <p>React</p>
+                        </div>
+                        <div class="lang-container-text">
+                            <p>Redux</p>
+                        </div>
+                        <div class="lang-container-text">
+                            <p>Styled Components</p>
+                        </div>
+                        <div class="link-github-project">
+                            <a href="https://github.com/mamite100/project-redux-quiz" target="_blank"
+                                rel="noopener noreferrer">
+                                View it on GitHub
+                            </a>
+                        </div>
+                    </div>
                 </article>
-                <div class="project-headline">
-                    <img src="assets/Labyrinth-project-card-img.png" alt="project headline imgage" aria-hidden="true" />
-                    <div class="transbox">
-                    </div>
-                    <h3 class="project-title" aria-hidden="true">API Labyrinth</h3>
-                </div>
-                <div class="project-brief">
-                    <p class="description-title">Text-based adventure game</p>
-                    <p class="cescription-project">
-                        A pair programming project, which receives information from an API and present them in the
-                        form of a text-base adventure
-                        game </p>
-                </div>
-                <div class="tags" aria-hidden="true">
-                    <p>React</p>
-                    <p>Redux</p>
-                    <p>API</p>
-                    <p>Styled Components</p>
-                </div>
-            </article>
-            <article class="project-card">
-                <a href="" target="_blank" rel="noopener noreferrer">
-                    <!--Proj4-->
-                    <div class="link-github-project">
-                        <a href="https://github.com/mamite100/project-labyrinth" target="_blank"
-                            rel="noopener noreferrer">
-                            View it on GitHub
+                <!--ProjectMovie-->
+                <article class="project-container-2">
+                    <div class="card-container-2">
+                        <a href="https://optimistic-haibt-a7262b.netlify.app/">
+                            <div class="overlay"></div>
+                            <img class="project-img" src="./assets/project-headline-movie.png" alt="headline img" />
                         </a>
+                        <h2 class="card-text">movie time</h2>
                     </div>
-            </article>
-            <!--Proj5-->
-            <article class="project-card">
-                <a href="https://optimistic-haibt-a7262b.netlify.app/" target="_blank" rel="noopener noreferrer">
-                    <div class="project-headline">
-                        <img src="assets/project-headline-movie.png" alt="project Movies" aria-hidden="true" />
-                        <div class="transbox"></div>
-                        <h3 class="project-title" aria-hidden="true">Movie Time</h3>
-                    </div>
-                    <div class="project-brief">
-                        <p class="description-title">Show movies with React Router</p>
-                        <p class="description-project">
-                            Multi-page React application using React Router, React Hooks and
-                            Styled Components.
-                        </p>
-                    </div>
-                    <div class="tags" aria-hidden="true">
-                        <p>Styled Components</p>
-                        <p>React</p>
-                        <p>React Hooks</p>
-                        <p>React Router</p>
-                        <p>API</p>
-                        <p>Pair-programming</p>
-                    </div>
-                </a>
-                <div class="link-github-project">
-                    <a href="https://github.com/mamite100/project-movies" target="_blank" rel="noopener noreferrer">
-                        View it on GitHub
-                    </a>
-                </div>
-            </article>
-            <!--Proj6-->
-            <article class="project-card">
-                <a href="https://happy-happy-by-mamite.netlify.app/" target="_blank" rel="noopener noreferrer">
-                    <div class="project-headline">
-                        <img src="assets/Happy Thoughts.png" alt="project Happy Thoughts" aria-hidden="true" />
-                        <div class="transbox"></div>
-                        <h3 class="project-title" aria-hidden="true">
-                            Share your happy thoughts
-                        </h3>
-                    </div>
-                    <div class="project-brief">
-                        <p class="description-title">Happy Thoughts.</p>
-                        <p class="description-project">
-                            Website where you can post happy thoughts. Built in React and
-                            using a provided API.
-                        </p>
-                    </div>
-                    <div class="tags" aria-hidden="true">
-                        <p>HTML5</p>
-                        <p>CSS3</p>
-                        <p>JavaScript ES6</p>
-                        <p>React</p>
-                        <p>React Hooks</p>
-                        <p>API</p>
-                    </div>
-                </a>
-                <div class="link-github-project">
-                    <a href="https://github.com/mamite100/project-happy-thoughts" target="_blank"
-                        rel="noopener noreferrer">
-                        View it on GitHub
-                    </a>
-                </div>
-            </article>
-
-            <article class="other-project">
-                <h3 class="subheading">Other Projects</h3>
-
-                <!--project-survey-->
-                <a href="https://succession.netlify.app/" target="_blank" rel="noopener noreferrer">
-                    <p class="other-project-title">
-                        <span class="highlight-color-uppercase">Survey form.</span>
-                        Quiz theme using React state and controlled forms.
-                        <span class="highlight-color" aria-hidden="true">>></span>
+                    <h6>Pic movies with react router</h6>
+                    <p class="project-text">Multi-page React application using React Router, React Hooks and Styled
+                        Components.
                     </p>
-                    <div class="tags" aria-hidden="true">
-                        <p>HTML5</p>
-                        <p>CSS3</p>
-                        <p>JavaScript ES6</p>
-                        <p>React</p>
-                        <p>React Hooks</p>
+                    <div class="lang-container">
+                        <div class="lang-container-text">
+                            <p>React / JSX</p>
+                        </div>
+                        <div class="lang-container-text">
+                            <p>Style Components</p>
+                        </div>
+                        <div class="lang-container-text">
+                            <p>JSON:API</p>
+                        </div>
+                        <div class="lang-container-text">
+                            <p>Pair-programming</p>
+                        </div>
+                        <div class="link-github-project">
+                            <a href="https://github.com/mamite100/project-movies" target="_blank"
+                                rel="noopener noreferrer">
+                                View it on GitHub
+                            </a>
+                        </div>
                     </div>
-                </a>
-            </article>
-            <article class="other-project">
+                </article>
+            </section>
+            <!--ProjectHappyThought-->
+            <section class="wrap-container">
+                <article class="project-container-1">
+                    <div class="card-container-1">
+                        <a href="https://happy-happy-by-mamite.netlify.app/">
+                            <div class="overlay"></div>
+                            <img class="project-img" src="./assets/Happy Thoughts.png" alt="project headline img" />
+                        </a>
+                        <h2 class="card-text">Share your happy thoughts</h2>
+                    </div>
 
-                <!-- project-music-releases -->
-                <a href="https://heuristic-minsky-f71e10.netlify.app/" target="_blank" rel="noopener noreferrer">
-                    <p class="other-project-title">
-                        <span class="highlight-color-uppercase">Music releases.</span>
-                        Website built in React using the Spotify API.
-                        <span class="highlight-color" aria-hidden="true">>></span>
+                    <h6>Happy thoughts</h6>
+                    <p class="project-text">
+                        Website where you can post happy thoughts. Built in React and
+                        using a provided API.
                     </p>
-                    <div class="tags" aria-hidden="true">
-                        <p>HTML5</p>
-                        <p>CSS3</p>
-                        <p>JavaScript ES6</p>
-                        <p>React</p>
-                        <p>Pair-programming</p>
+                    <div class="lang-container">
+                        <div class="lang-container-text">
+                            <p>HTML5</p>
+                        </div>
+                        <div class="lang-container-text">
+                            <p>CSS3</p>
+                        </div>
+                        <div class="lang-container-text">
+                            <p>JavaScriptE64</p>
+                        </div>
+                        <div class="lang-container-text">
+                            <p>React</p>
+                        </div>
+                        <div class="lang-container-text">
+                            <p>JSON:API</p>
+                        </div>
+                        <div class="link-github-project">
+                            <a href="https://github.com/mamite100/project-happy-thoughts" target="_blank"
+                                rel="noopener noreferrer">
+                                View it on GitHub
+                            </a>
+                        </div>
                     </div>
-                </a>
-            </article>
-            <article class="other-project">
-                <!-- git hub tracker -->
-                <a href="https://mamites-github-tracker.netlify.app/" target="_blank" rel="noopener noreferrer">
-                    <p class="other-project-title">
-                        <span class="highlight-color-uppercase">GitHub Tracker.</span>
-                        Created to learn more about APIs and JavaScript.
-                        <span class="highlight-color" aria-hidden="true">>></span>
+                </article>
+                <!--ProjectGuessWho-->
+                <article class="project-container-2">
+                    <div class="card-container-2">
+                        <a href="https://guesswhobymamite.netlify.app/">
+                            <div class="overlay"></div>
+                            <img class="project-img" src="./assets/guess_who.png" alt="project headline img" />
+                        </a>
+                        <h2 class="card-text">Guess Who Game</h2>
+                    </div>
+                    <h6>Game created to learn basic JavaScript.</h6>
+                    <p class="project-text">
+                        The digital version of the classic 90's board game "Guess Who" built with event listeners using
+                        JavaScrip functions.
                     </p>
-                    <div class="tags" aria-hidden="true">
-                        <p>HTML5</p>
-                        <p>CSS3</p>
-                        <p>JavaScript ES6</p>
-                        <p>APIs</p>
+                    <div class="lang-container">
+                        <div class="lang-container-text">
+                            <p>HTML5</p>
+                        </div>
+                        <div class="lang-container-text">
+                            <p>CSS3</p>
+                        </div>
+                        <div class="lang-container-text">
+                            <p>JavaScriptE64</p>
+                        </div>
+                        <div class="link-github-project">
+                            <a href="https://github.com/mamite100/project-guess-who" target="_blank"
+                                rel="noopener noreferrer">
+                                View it on GitHub
+                            </a>
+                        </div>
                     </div>
-                </a>
-            </article>
-            <article class="other-project">
-                <!-- project-guess-who -->
-                <a href="https://guesswhobymamite.netlify.app/" target="_blank" rel="noopener noreferrer">
-                    <p class="other-project-title">
-                        <span class="highlight-color-uppercase">Guess Who Game.</span>
-                        Game created to learn basic JavaScript.
-                        <span class="highlight-color" aria-hidden="true">>></span>
-                    </p>
-                    <div class="tags" aria-hidden="true">
-                        <p>HTML5</p>
-                        <p>CSS3</p>
-                        <p>JavaScript ES6</p>
-                    </div>
-                </a>
-            </article>
-            <article class="other-project">
+                </article>
+            </section>
 
-                <h2 class="title">It’s all in my head!</h2>
-                <article class="thoughts-section">
-                    <div class="post-card">
-                        <a href="https://medium.com/@mamite.andersson/its-all-in-my-head-7bbf8fefb231" target="_blank"
-                            rel="noopener noreferrer">
-                            <img src="assets/In my head.png" alt="image " />
-                            <p class="highlight-color">On how I decided that it was time for
-                                change</p>
-                            <p class="font-weight-bold"></p>
-                            <p>
-                                <span class="highlight-color" aria-hidden="true">>></span>
+            <!-- display in desktop view  -->
+            <section class="wrap-container-desktop">
+                <article class="project-desktop">
+                    <div class="card-container-2">
+                        <a href="https://succession.netlify.app/">
+                            <div class="overlay"></div>
+                            <img class="project-img" src="./assets/Sucession_img.jpg"
+                                alt="img of the succession cast" />
+                        </a>
+                        <h2 class="card-text">Survey form</h2>
+                    </div>
+                    <h6>Quiz using React</h6>
+                    <p class="project-text">Quiz theme using React state and controlled forms.</p>
+                    <div class="lang-container">
+                        <div class="lang-container-text">
+                            <p>HTML5</p>
+                        </div>
+                        <div class="lang-container-text">
+                            <p>CSS3</p>
+                        </div>
+                        <div class="lang-container-text">
+                            <p>React / JSX</p>
+                        </div>
+                    </div>
+                </article>
+
+            </section>
+
+            <!-- OTHER PROJECTS SECTION -->
+            <h2 class="other-projects">other projects</h2>
+
+            <!-- MOBILE & TABLET ONLY -->
+            <section class="mobile-tablet-only">
+                <section class="other-projects-wrapper">
+                    <div class="other-projects-1">
+                        <h6>Music Releases</h6>
+                        <a href="https://heuristic-minsky-f71e10.netlify.app/">
+                            <p class="project-text">
+                                Website built in React using the Spotify API.
+                                <span class="red">>></span>
                             </p>
                         </a>
+                        <div class="lang-container">
+                            <div class="lang-container-text">
+                                <p>HTML5</p>
+                            </div>
+                            <div class="lang-container-text">
+                                <p>CSS3</p>
+                            </div>
+                            <div class="lang-container-text">
+                                <p>React / JSX</p>
+                            </div>
+                            <div class="lang-container-text">
+                                <p>Pair-programming</p>
+                            </div>
+                        </div>
                     </div>
-                    <!-- <div class="post-card">Post 2</div> -->
-                </article>
 
-                <section class="skills-section">
-                    <h2 class="title">Skills</h2>
-                    <div class="skills-container">
-                        <div class="skills-list">
-                            <h3 class="highlight-color-uppercase">Code</h3>
-                            <p>HTML5</p>
-                            <p>CSS3</p>
-                            <p>JavaScript ES6</p>
-                            <p>APIs</p>
-                            <p>React</p>
-                            <p>React Native</p>
-                            <p>Redux</p>
-                            <p>Node.js</p>
-                        </div>
-
-                        <div class="skills-list">
-                            <h3 class="highlight-color-uppercase">Toolbox</h3>
-                            <p>VS Code</p>
-                            <p>GitHub</p>
-                            <p>Stack Overflow</p>
-                            <p>Slack</p>
-                            <p>Netlify</p>
-                            <p>Postman</p>
-                            <p>Figma</p>
-                        </div>
-                        <div class="skills-list">
-                            <h3 class="highlight-color-uppercase">More</h3>
-                            <p>Agile methodology</p>
-                            <p>Web Accessibility</p>
-                            <p>Pair-programming</p>
-                            <p>Mob-programming</p>
-                            <p>Responsive design</p>
+                    <div class="other-projects-2">
+                        <h6>weather app</h6>
+                        <a href="https://great-weather.netlify.app/">
+                            <p class="project-text">
+                                Weather App created by fetches data from an API
+                                and changes the design depending on the current weather.
+                                <span class="red">>></span>
+                            </p>
+                        </a>
+                        <div class="lang-container">
+                            <div class="lang-container-text">
+                                <p>HTML5</p>
+                            </div>
+                            <div class="lang-container-text">
+                                <p>CSS3</p>
+                            </div>
+                            <div class="lang-container-text">
+                                <p>Vanilla JavaScriptE64</p>
+                            </div>
+                            <div class="lang-container-text">
+                                <p>JSON:API</p>
+                            </div>
+                            <div class="lang-container-text">
+                                <p>Mob-programming</p>
+                            </div>
                         </div>
                     </div>
                 </section>
+            </section>
 
-                <h2 class="title">For more</h2>
-                <section class="social-media-icons">
-                    <a href="https://www.linkedin.com/in/mamite-andersson/" target="_blank" rel="noopener noreferrer"
-                        aria-label="link to LinkedIn">
-                        <div class="social-icon" title="LinkedIn icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="51" height="49" viewBox="0 5 1036 990">
-                                <path
-                                    d="M0 120c0-33.334 11.667-60.834 35-82.5C58.333 15.833 88.667 5 126 5c36.667 0 66.333 10.666 89 32 23.333 22 35 50.666 35 86 0 32-11.333 58.666-34 80-23.333 22-54 33-92 33h-1c-36.667 0-66.333-11-89-33S0 153.333 0 120zm13 875V327h222v668H13zm345 0h222V622c0-23.334 2.667-41.334 8-54 9.333-22.667 23.5-41.834 42.5-57.5 19-15.667 42.833-23.5 71.5-23.5 74.667 0 112 50.333 112 151v357h222V612c0-98.667-23.333-173.5-70-224.5S857.667 311 781 311c-86 0-153 37-201 111v2h-1l1-2v-95H358c1.333 21.333 2 87.666 2 199 0 111.333-.667 267.666-2 469z" />
-                            </svg>
-                        </div>
-                        <p aria-hidden="true">linkedin</p>
+            <!-- ALWAYS DISPLAYED -->
+            <section class="other-projects-wrapper">
+                <div class="other-projects-1">
+                    <h6>to do list</h6>
+                    <a href="https://github.com/mamite100/project-todos">
+                        <p class="project-text">
+                            A classic to do list app where the user can create and delete tasks.
+                            <span class="red">>></span>
+                        </p>
                     </a>
-                    <a href="https://github.com/mamite100?tab=repositories/" target="_blank" rel="noopener noreferrer"
-                        aria-label="link to GitHub">
-                        <div class="social-icon" title="GitHub icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" width="57"
-                                height="62">
-                                <path
-                                    d="M10.07031,20.50291a1.00008,1.00008,0,0,0-1.18115-.9834c-1.30908.24024-2.96191.27637-3.40137-.958a5.70754,5.70754,0,0,0-1.83691-2.415,1.20073,1.20073,0,0,1-.1665-.10938,1,1,0,0,0-.93067-.64551H2.54883a.99965.99965,0,0,0-1,.99512c-.00391.81543.811,1.33789,1.1416,1.51465a4.4408,4.4408,0,0,1,.92383,1.35937c.36426,1.02344,1.42285,2.57617,4.46582,2.376.001.03516.00195.06836.00244.09863l.00439.26758a1,1,0,0,0,2,0l-.00488-.31836C10.07715,21.4951,10.07031,21.22068,10.07031,20.50291Zm10.667-15.126c.03174-.125.063-.26367.09034-.41992a6.27792,6.27792,0,0,0-.40821-3.293,1.002,1.002,0,0,0-.61572-.58007c-.356-.12012-1.67041-.35645-4.18408,1.25a13.86918,13.86918,0,0,0-6.354,0C6.76221.751,5.45459.9658,5.10205,1.07908a.99744.99744,0,0,0-.63135.584,6.3003,6.3003,0,0,0-.40332,3.35644c.02442.12793.05078.2461.07813.35449A6.26928,6.26928,0,0,0,2.89014,9.20311a8.42168,8.42168,0,0,0,.04248.92187c.334,4.60254,3.334,5.98438,5.42431,6.459-.04345.125-.083.25878-.11816.40039a1.00023,1.00023,0,0,0,1.94238.47851,1.6784,1.6784,0,0,1,.46778-.87793.99947.99947,0,0,0-.5459-1.74512c-3.4541-.39453-4.95362-1.80175-5.1792-4.89843a6.61076,6.61076,0,0,1-.03369-.73828,4.25769,4.25769,0,0,1,.91943-2.71289,3.022,3.022,0,0,1,.1958-.23145.99988.99988,0,0,0,.188-1.02441,3.3876,3.3876,0,0,1-.15527-.55567A4.09356,4.09356,0,0,1,6.1167,3.06346a7.54263,7.54263,0,0,1,2.415,1.17968,1.00877,1.00877,0,0,0,.82764.13282,11.77716,11.77716,0,0,1,6.17285.001,1.00549,1.00549,0,0,0,.83056-.13769,7.572,7.572,0,0,1,2.40528-1.19043,4.03977,4.03977,0,0,1,.0874,1.57812,3.205,3.205,0,0,1-.16895.60743.9999.9999,0,0,0,.188,1.02441c.07715.08691.1543.18066.22363.26855A4.12186,4.12186,0,0,1,20,9.20311a7.03888,7.03888,0,0,1-.0376.77734c-.22021,3.05566-1.72558,4.46387-5.1958,4.85937a1,1,0,0,0-.54541,1.7461,1.63079,1.63079,0,0,1,.46631.9082,3.06079,3.06079,0,0,1,.09229.81934v2.334C14.77,21.2949,14.77,21.78025,14.77,22.00291a1,1,0,1,0,2,0c0-.2168,0-.69238.00977-1.33984V18.31346a4.8815,4.8815,0,0,0-.15479-1.31153,4.25638,4.25638,0,0,0-.11621-.416,6.51258,6.51258,0,0,0,5.44531-6.42383A8.69677,8.69677,0,0,0,22,9.20311,6.13062,6.13062,0,0,0,20.7373,5.37693Z" />
-                            </svg>
+                    <div class="lang-container">
+                        <div class="lang-container-text">
+                            <p>HTML5</p>
                         </div>
-                        <p aria-hidden="true">github</p>
-                    </a>
-                    <a href="https://stackoverflow.com/c/technigo/users/270" target="_blank" rel="noopener noreferrer"
-                        aria-label="link to Stack Overflow">
-                        <div class="social-icon" title="Stack Overflow icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24"
-                                viewBox="0 0 24 24" width="61" height="61">
-                                <path
-                                    d="M6.444 14.839l10.338 2.196.433-2.089-10.338-2.212zM6.215 17.571h10.566v2.127h-10.566zM7.8 9.831l9.572 4.526.887-1.944-9.577-4.538zM17.373 14.358l-.001-.001-.001.001z" />
-                                <path
-                                    d="M2 15.429v8.571h18.992v-8.571h-2.113v6.428h-14.766v-6.428zM10.453 5.063l8.109 6.873 1.346-1.65-8.109-6.873zM22 8.587l-6.302-8.587-1.691 1.286 6.302 8.587z" />
-                            </svg>
+                        <div class="lang-container-text">
+                            <p>CSS3</p>
                         </div>
-                        <p aria-hidden="true">stack</p>
-                        <p aria-hidden="true">overflow</p>
+                        <div class="lang-container-text">
+                            <p>JavaScriptE64</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="other-projects-2">
+                    <h6>github tracker</h6>
+                    <a href="https://github.com/mamite100/project-github-tracker">
+                        <p class="project-text">
+                            In this project we built a page that collects an overview of all of our Technigo projects by
+                            fetching data from GitHub API's.
+                            <span class="red">>></span>
+                        </p>
                     </a>
+                    <div class="lang-container">
+                        <div class="lang-container-text">
+                            <p>HTML5</p>
+                        </div>
+                        <div class="lang-container-text">
+                            <p>CSS3</p>
+                        </div>
+                        <div class="lang-container-text">
+                            <p>JavaScriptE64</p>
+                        </div>
+                        <div class="lang-container-text">
+                            <p>JSON:API</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>It's all in my head</h3>
+                <section class="my-thoughts-container">
+                    <div class="my-thoughts-section">
+                        <img class="article-gif" src="./assets/In my head.png" alt="article-gif" />
+                        <div class="article-text">
+                            <a href="https://medium.com/@mamite.andersson/its-all-in-my-head-7bbf8fefb231">
+                                <h6>On how i decided that it was time for chage</h6>
+                                <span class="red">>></span>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <article class="skills-section">
+                        <h3>skills</h3>
+                        <div class="skills-wrapper">
+                            <div class="skills-section-1">
+                                <h6>code</h6>
+                                <p class="project-text">HTML 5</p>
+                                <p class="project-text">CSS3</p>
+                                <p class="project-text">JavaScript ES6</p>
+                                <p class="project-text">React</p>
+                                <p class="project-text">Styled Components</p>
+                                <p class="project-text">GitHub</p>
+                                <p class="project-text">Redux</p>
+                                <p class="project-text">Node.js</p>
+                            </div>
+                            <div class="skills-section-2">
+                                <h6>toolbox</h6>
+                                <p class="project-text">VS Code</p>
+                                <p class="project-text">Atom Postman</p>
+                                <p class="project-text">Figma</p>
+
+                            </div>
+                        </div>
+                    </article>
+
+                    <h3>for more</h3>
+                    <article class="contact-links">
+                        <div class="linkedin-section">
+                            <a href="https://www.linkedin.com/in/mamite-andersson/">
+                                <img class="icon-1" src="./assets/LinkedINRed.png" alt="linkedin-icon" />
+                            </a>
+                            <p>linkedin</p>
+                        </div>
+                        <div class="github-section">
+                            <a href="https://github.com/mamite100">
+                                <img class="icon-2" src="./assets/GitHubRed.png" alt="github-icon" />
+                            </a>
+                            <p>git hub</p>
+                        </div>
+                        <div class="stackoverflow-section">
+                            <a href="https://stackoverflow.com/c/technigo/users/270">
+                                <img class="icon-3" src="./assets/StackOverflowred.png" alt="stackoverflow-icon" />
+                            </a>
+                            <p>stack overflow</p>
+                        </div>
+                    </article>
                 </section>
 
                 <footer>
-                    <div class="contact-info">
-                        <h2 class="contact-title">Contact</h2>
-                        <p>Mamite Andersson</p>
-                        <p>
-                            <a href="tel:+46739813092"
-                                aria-label="phone number. +. 4 6. 7 3. 9 8 1. 3 0. 9 2.">+46(0)73-981 30
-                                92</a>
+                    <div class="contact-section">
+                        <div class="contact-section-text">contact</div>
+                        <p class="contact-info">Mamite Andersson</p>
+                        <a href="tel:+46739813092" aria-label="phone number. +. 4 6. 7 3. 9 8 1. 3 0. 9 2.">+46(0)73-981
+                            30
+                            92</a>
                         </p>
                         <p>
                             <a href="mailto:mamiteandersson@gmail.com"
